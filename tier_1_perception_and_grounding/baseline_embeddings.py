@@ -12,7 +12,7 @@ class VectorArchitect:
         # 1. Initialize persistent ChromaDB client
         persist_dir = os.path.abspath(os.path.join(
             os.path.dirname(__file__), 
-            "../tier_2_optimization_and_debate/chroma_storage/"
+            "../tier_2_vector_layer/chroma_storage/"
         ))
         os.makedirs(persist_dir, exist_ok=True)
         
