@@ -1,17 +1,22 @@
-# 1. Python Environment (Updated for Nested Folders)
-venv/
+# 1. Python Environment (Universal Ignore)
 **/venv/
 **/env/
 **/__pycache__/
 *.pyc
 
-# 2. Local Vector Data (Hamza will have his own)
-chroma_storage/
-chroma_data/
+# 2. Local Vector Data (Prevents 100MB+ uploads)
+# The **/ ensures it finds the database inside tier_2
+**/chroma_storage/
+**/chroma_data/
+*.db
 
-# 3. OS specific files
+# 3. Flutter/Asad Tier (Pre-emptive Shield)
+**/build/
+**/.dart_tool/
+**/.packages
+**/.flutter-plugins
+
+# 4. OS & Secrets
 .DS_Store
 Thumbs.db
-
-# 4. Sensitive info
 .env
