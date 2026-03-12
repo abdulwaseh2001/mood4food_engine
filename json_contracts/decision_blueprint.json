@@ -1,0 +1,40 @@
+{
+  "equilibrium_metadata": {
+    "equilibrium_state": "resolved_via_relaxation",
+    "computational_cycles": 3,
+    "delta_u_total": 0.015
+  },
+  "selected_candidate": {
+    "dish_id": "d_491",
+    "name": "Spicy Chicken Karahi",
+    "restaurant_name": "Local Vendor A",
+    "final_total_pkr": 450
+  },
+  "optimization_state": {
+    "final_utilities": {
+      "U_health": 0.88,
+      "U_budget": 0.95,
+      "U_taste": 0.72,
+      "U_total_nash": 0.84
+    },
+    "active_weights": {
+      "w_health": 0.33,
+      "w_budget": 0.23,
+      "w_taste": 0.44
+    }
+  },
+  "explainable_ai_ast": {
+    "trigger_weight": "w_taste",
+    "explanation_node": "Selected via constraint relaxation. Budget weight (w_b) degraded to force optimization.",
+    "xai_badges": [
+      "Health Optimized",
+      "Budget Match"
+    ]
+  },
+  "control_surface_ast": {
+    "rejection_triggers": [
+      "gradient_signal_too_expensive",
+      "gradient_signal_more_protein"
+    ]
+  }
+}

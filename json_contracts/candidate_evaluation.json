@@ -1,0 +1,32 @@
+{
+  "graph_execution_state": {
+    "search_space_viable": true,
+    "nodes_pruned": 14,
+    "surviving_candidates_count": 2
+  },
+  "candidates": [
+    {
+      "dish_metadata": {
+        "dish_id": "d_491",
+        "name": "Spicy Chicken Karahi",
+        "restaurant_name": "Local Vendor A"
+      },
+      "financial_metrics": {
+        "base_price_pkr": 400,
+        "delivery_fee_pkr": 50
+      },
+      "nutritional_metrics": {
+        "total_calories": 650,
+        "protein_grams": 35,
+        "carbs_grams": 40,
+        "fats_grams": 25
+      },
+      "vector_retrieval": {
+        "taste_vector_id": "vec_d_491"
+      },
+      "simulation_state": {
+        "inventory_in_stock": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "intent_metadata": {
+    "intent_id": "req_8841",
+    "user_id": "u_992",
+    "timestamp": "2026-03-12T19:30:00Z"
+  },
+  "hard_constraints": {
+    "budget_max_pkr": 500,
+    "max_calories": 800,
+    "allergens_pruned": [
+      "peanut",
+      "shellfish"
+    ],
+    "dietary_compliance": "halal"
+  },
+  "soft_constraints": {
+    "nutritional_targets": {
+      "protein_min_grams": 30,
+      "target_macro_ratio": {
+        "protein": 0.4,
+        "carbs": 0.3,
+        "fats": 0.3
+      }
+    },
+    "mood_vector_seed": "comfort"
+  },
+  "initial_agent_weights": {
+    "w_health": 0.33,
+    "w_budget": 0.33,
+    "w_taste": 0.34
+  }
+}
