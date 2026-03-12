@@ -87,3 +87,23 @@ Here is a breakdown of how data travels across the application:
 | `ControlSurface()` | `DecisionBlueprintAST` | Instance of `ControlSurface` | Receives slider states and dynamically drawn buttons. |
 | `ControlSurface._onWeightChanged()` | `String label`, `double value` | Console Log | Collects local gradient adjustments to feed back into algorithms. |
 | `ControlSurface._onRejectionTrigger()`| `String signal` | Console Log | Sends rejection logic (e.g. 'Too Expensive') to re-fetch recommendations. |
+
+---
+
+## 4. How to Run Locally
+
+To preview the UI locally on your computer:
+
+1. Open your terminal and navigate to the `tier_3_compilation_and_rendering` directory:
+   ```bash
+   cd "path/to/tier_3_compilation_and_rendering"
+   ```
+2. Retrieve the Flutter dependencies:
+   ```bash
+   flutter pub get
+   ```
+3. Run the application on your desired device. E.g., for Chrome:
+   ```bash
+   flutter run -d chrome
+   ```
+   *(Note: For MacOS Desktop, you might need to enable desktop support via `flutter create .` first if the `macos/` folder does not exist)*.
