@@ -96,7 +96,7 @@ class SymbolicKnowledgeGraph:
 
 if __name__ == "__main__":
     # Integration point for Tier 1 Pipeline
-    skg = SymbolicKnowledgeGraph()
+    skg = SymbolicKnowledgeGraph(uri="bolt://localhost:7687")
     try:
         results = skg.enforce_safety_constraints()
         print(f"Safety Enforcement Complete. {results['graph_execution_state']['surviving_candidates_count']} candidates safe.")

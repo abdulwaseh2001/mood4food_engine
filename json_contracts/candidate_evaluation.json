@@ -1,8 +1,8 @@
 {
   "graph_execution_state": {
     "search_space_viable": true,
-    "nodes_pruned": 14,
-    "surviving_candidates_count": 2
+    "nodes_pruned": 0,
+    "surviving_candidates_count": 3
   },
   "candidates": [
     {
@@ -12,21 +12,76 @@
         "restaurant_name": "Local Vendor A"
       },
       "financial_metrics": {
-        "base_price_pkr": 400,
-        "delivery_fee_pkr": 50
+        "base_price_pkr": 450.0,
+        "delivery_fee_pkr": 0.0
       },
       "nutritional_metrics": {
-        "total_calories": 650,
-        "protein_grams": 35,
-        "carbs_grams": 40,
-        "fats_grams": 25
+        "total_calories": 650.0,
+        "protein_grams": 35.0,
+        "carbs_grams": 0.0,
+        "fats_grams": 0.0
       },
       "vector_retrieval": {
         "taste_vector_id": "vec_d_491"
       },
       "simulation_state": {
         "inventory_in_stock": true
-      }
+      },
+      "ingredients": [
+        "chicken"
+      ]
+    },
+    {
+      "dish_metadata": {
+        "dish_id": "d_493",
+        "name": "Chicken Biryani",
+        "restaurant_name": "Local Vendor A"
+      },
+      "financial_metrics": {
+        "base_price_pkr": 400.0,
+        "delivery_fee_pkr": 0.0
+      },
+      "nutritional_metrics": {
+        "total_calories": 720.0,
+        "protein_grams": 28.0,
+        "carbs_grams": 0.0,
+        "fats_grams": 0.0
+      },
+      "vector_retrieval": {
+        "taste_vector_id": "vec_d_493"
+      },
+      "simulation_state": {
+        "inventory_in_stock": true
+      },
+      "ingredients": [
+        "chicken"
+      ]
+    },
+    {
+      "dish_metadata": {
+        "dish_id": "d_494",
+        "name": "Daal Mash",
+        "restaurant_name": "Local Vendor A"
+      },
+      "financial_metrics": {
+        "base_price_pkr": 250.0,
+        "delivery_fee_pkr": 0.0
+      },
+      "nutritional_metrics": {
+        "total_calories": 400.0,
+        "protein_grams": 15.0,
+        "carbs_grams": 0.0,
+        "fats_grams": 0.0
+      },
+      "vector_retrieval": {
+        "taste_vector_id": "vec_d_494"
+      },
+      "simulation_state": {
+        "inventory_in_stock": true
+      },
+      "ingredients": [
+        "lentils"
+      ]
     }
   ]
 }
