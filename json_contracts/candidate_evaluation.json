@@ -1,32 +1,415 @@
 {
   "graph_execution_state": {
     "search_space_viable": true,
-    "nodes_pruned": 14,
-    "surviving_candidates_count": 2
+    "nodes_pruned": 0,
+    "surviving_candidates_count": 15
   },
   "candidates": [
     {
       "dish_metadata": {
-        "dish_id": "d_491",
-        "name": "Spicy Chicken Karahi",
-        "restaurant_name": "Local Vendor A"
+        "dish_id": "d_pak_001",
+        "name": "Beef Nihari",
+        "restaurant_name": "Savour Foods"
       },
       "financial_metrics": {
-        "base_price_pkr": 400,
-        "delivery_fee_pkr": 50
+        "base_price_pkr": 580.0,
+        "delivery_fee_pkr": 0.0
       },
       "nutritional_metrics": {
-        "total_calories": 650,
-        "protein_grams": 35,
-        "carbs_grams": 40,
-        "fats_grams": 25
+        "total_calories": 850.0,
+        "protein_grams": 45.0,
+        "carbs_grams": 0.0,
+        "fats_grams": 0.0
       },
       "vector_retrieval": {
-        "taste_vector_id": "vec_d_491"
+        "taste_vector_id": "vec_d_pak_001"
       },
       "simulation_state": {
         "inventory_in_stock": true
-      }
+      },
+      "ingredients": [
+        "ghee",
+        "wheat flour",
+        "beef"
+      ]
+    },
+    {
+      "dish_metadata": {
+        "dish_id": "d_pak_002",
+        "name": "Chicken Karahi",
+        "restaurant_name": "Monal"
+      },
+      "financial_metrics": {
+        "base_price_pkr": 1250.0,
+        "delivery_fee_pkr": 0.0
+      },
+      "nutritional_metrics": {
+        "total_calories": 950.0,
+        "protein_grams": 75.0,
+        "carbs_grams": 0.0,
+        "fats_grams": 0.0
+      },
+      "vector_retrieval": {
+        "taste_vector_id": "vec_d_pak_002"
+      },
+      "simulation_state": {
+        "inventory_in_stock": true
+      },
+      "ingredients": [
+        "ghee",
+        "yogurt",
+        "chicken"
+      ]
+    },
+    {
+      "dish_metadata": {
+        "dish_id": "d_pak_003",
+        "name": "Halwa Puri",
+        "restaurant_name": "Local Vendor B"
+      },
+      "financial_metrics": {
+        "base_price_pkr": 280.0,
+        "delivery_fee_pkr": 0.0
+      },
+      "nutritional_metrics": {
+        "total_calories": 750.0,
+        "protein_grams": 12.0,
+        "carbs_grams": 0.0,
+        "fats_grams": 0.0
+      },
+      "vector_retrieval": {
+        "taste_vector_id": "vec_d_pak_003"
+      },
+      "simulation_state": {
+        "inventory_in_stock": true
+      },
+      "ingredients": [
+        "ghee",
+        "wheat flour"
+      ]
+    },
+    {
+      "dish_metadata": {
+        "dish_id": "d_pak_004",
+        "name": "Daal Mash",
+        "restaurant_name": "Local Vendor B"
+      },
+      "financial_metrics": {
+        "base_price_pkr": 350.0,
+        "delivery_fee_pkr": 0.0
+      },
+      "nutritional_metrics": {
+        "total_calories": 420.0,
+        "protein_grams": 18.0,
+        "carbs_grams": 0.0,
+        "fats_grams": 0.0
+      },
+      "vector_retrieval": {
+        "taste_vector_id": "vec_d_pak_004"
+      },
+      "simulation_state": {
+        "inventory_in_stock": true
+      },
+      "ingredients": [
+        "lentils"
+      ]
+    },
+    {
+      "dish_metadata": {
+        "dish_id": "d_pak_005",
+        "name": "Mutton Pulao",
+        "restaurant_name": "Savour Foods"
+      },
+      "financial_metrics": {
+        "base_price_pkr": 650.0,
+        "delivery_fee_pkr": 0.0
+      },
+      "nutritional_metrics": {
+        "total_calories": 880.0,
+        "protein_grams": 38.0,
+        "carbs_grams": 0.0,
+        "fats_grams": 0.0
+      },
+      "vector_retrieval": {
+        "taste_vector_id": "vec_d_pak_005"
+      },
+      "simulation_state": {
+        "inventory_in_stock": true
+      },
+      "ingredients": [
+        "rice",
+        "mutton"
+      ]
+    },
+    {
+      "dish_metadata": {
+        "dish_id": "d_pak_006",
+        "name": "Chapli Kebab",
+        "restaurant_name": "Cheezious"
+      },
+      "financial_metrics": {
+        "base_price_pkr": 450.0,
+        "delivery_fee_pkr": 0.0
+      },
+      "nutritional_metrics": {
+        "total_calories": 550.0,
+        "protein_grams": 30.0,
+        "carbs_grams": 0.0,
+        "fats_grams": 0.0
+      },
+      "vector_retrieval": {
+        "taste_vector_id": "vec_d_pak_006"
+      },
+      "simulation_state": {
+        "inventory_in_stock": true
+      },
+      "ingredients": [
+        "wheat flour",
+        "beef"
+      ]
+    },
+    {
+      "dish_metadata": {
+        "dish_id": "d_pak_007",
+        "name": "Sindhi Biryani",
+        "restaurant_name": "Savour Foods"
+      },
+      "financial_metrics": {
+        "base_price_pkr": 480.0,
+        "delivery_fee_pkr": 0.0
+      },
+      "nutritional_metrics": {
+        "total_calories": 780.0,
+        "protein_grams": 32.0,
+        "carbs_grams": 0.0,
+        "fats_grams": 0.0
+      },
+      "vector_retrieval": {
+        "taste_vector_id": "vec_d_pak_007"
+      },
+      "simulation_state": {
+        "inventory_in_stock": true
+      },
+      "ingredients": [
+        "yogurt",
+        "rice",
+        "chicken"
+      ]
+    },
+    {
+      "dish_metadata": {
+        "dish_id": "d_pak_008",
+        "name": "Seekh Kebab",
+        "restaurant_name": "Monal"
+      },
+      "financial_metrics": {
+        "base_price_pkr": 520.0,
+        "delivery_fee_pkr": 0.0
+      },
+      "nutritional_metrics": {
+        "total_calories": 480.0,
+        "protein_grams": 35.0,
+        "carbs_grams": 0.0,
+        "fats_grams": 0.0
+      },
+      "vector_retrieval": {
+        "taste_vector_id": "vec_d_pak_008"
+      },
+      "simulation_state": {
+        "inventory_in_stock": true
+      },
+      "ingredients": [
+        "beef"
+      ]
+    },
+    {
+      "dish_metadata": {
+        "dish_id": "d_pak_009",
+        "name": "Haleem",
+        "restaurant_name": "Savour Foods"
+      },
+      "financial_metrics": {
+        "base_price_pkr": 380.0,
+        "delivery_fee_pkr": 0.0
+      },
+      "nutritional_metrics": {
+        "total_calories": 620.0,
+        "protein_grams": 28.0,
+        "carbs_grams": 0.0,
+        "fats_grams": 0.0
+      },
+      "vector_retrieval": {
+        "taste_vector_id": "vec_d_pak_009"
+      },
+      "simulation_state": {
+        "inventory_in_stock": true
+      },
+      "ingredients": [
+        "lentils",
+        "beef",
+        "wheat flour"
+      ]
+    },
+    {
+      "dish_metadata": {
+        "dish_id": "d_pak_010",
+        "name": "Paye",
+        "restaurant_name": "Local Vendor B"
+      },
+      "financial_metrics": {
+        "base_price_pkr": 450.0,
+        "delivery_fee_pkr": 0.0
+      },
+      "nutritional_metrics": {
+        "total_calories": 980.0,
+        "protein_grams": 32.0,
+        "carbs_grams": 0.0,
+        "fats_grams": 0.0
+      },
+      "vector_retrieval": {
+        "taste_vector_id": "vec_d_pak_010"
+      },
+      "simulation_state": {
+        "inventory_in_stock": true
+      },
+      "ingredients": [
+        "mutton",
+        "bone marrow"
+      ]
+    },
+    {
+      "dish_metadata": {
+        "dish_id": "d_pak_011",
+        "name": "Chana Chaat",
+        "restaurant_name": "Local Vendor B"
+      },
+      "financial_metrics": {
+        "base_price_pkr": 180.0,
+        "delivery_fee_pkr": 0.0
+      },
+      "nutritional_metrics": {
+        "total_calories": 320.0,
+        "protein_grams": 12.0,
+        "carbs_grams": 0.0,
+        "fats_grams": 0.0
+      },
+      "vector_retrieval": {
+        "taste_vector_id": "vec_d_pak_011"
+      },
+      "simulation_state": {
+        "inventory_in_stock": true
+      },
+      "ingredients": [
+        "yogurt",
+        "chickpeas"
+      ]
+    },
+    {
+      "dish_metadata": {
+        "dish_id": "d_pak_012",
+        "name": "Samosa",
+        "restaurant_name": "Local Vendor B"
+      },
+      "financial_metrics": {
+        "base_price_pkr": 60.0,
+        "delivery_fee_pkr": 0.0
+      },
+      "nutritional_metrics": {
+        "total_calories": 280.0,
+        "protein_grams": 6.0,
+        "carbs_grams": 0.0,
+        "fats_grams": 0.0
+      },
+      "vector_retrieval": {
+        "taste_vector_id": "vec_d_pak_012"
+      },
+      "simulation_state": {
+        "inventory_in_stock": true
+      },
+      "ingredients": [
+        "wheat flour"
+      ]
+    },
+    {
+      "dish_metadata": {
+        "dish_id": "d_pak_013",
+        "name": "Chicken Tikka",
+        "restaurant_name": "Monal"
+      },
+      "financial_metrics": {
+        "base_price_pkr": 350.0,
+        "delivery_fee_pkr": 0.0
+      },
+      "nutritional_metrics": {
+        "total_calories": 240.0,
+        "protein_grams": 40.0,
+        "carbs_grams": 0.0,
+        "fats_grams": 0.0
+      },
+      "vector_retrieval": {
+        "taste_vector_id": "vec_d_pak_013"
+      },
+      "simulation_state": {
+        "inventory_in_stock": true
+      },
+      "ingredients": [
+        "chicken"
+      ]
+    },
+    {
+      "dish_metadata": {
+        "dish_id": "d_pak_014",
+        "name": "Mutanjan",
+        "restaurant_name": "Savour Foods"
+      },
+      "financial_metrics": {
+        "base_price_pkr": 420.0,
+        "delivery_fee_pkr": 0.0
+      },
+      "nutritional_metrics": {
+        "total_calories": 1450.0,
+        "protein_grams": 15.0,
+        "carbs_grams": 0.0,
+        "fats_grams": 0.0
+      },
+      "vector_retrieval": {
+        "taste_vector_id": "vec_d_pak_014"
+      },
+      "simulation_state": {
+        "inventory_in_stock": true
+      },
+      "ingredients": [
+        "ghee",
+        "rice"
+      ]
+    },
+    {
+      "dish_metadata": {
+        "dish_id": "d_pak_015",
+        "name": "Zinger Burger",
+        "restaurant_name": "Cheezious"
+      },
+      "financial_metrics": {
+        "base_price_pkr": 650.0,
+        "delivery_fee_pkr": 0.0
+      },
+      "nutritional_metrics": {
+        "total_calories": 880.0,
+        "protein_grams": 34.0,
+        "carbs_grams": 0.0,
+        "fats_grams": 0.0
+      },
+      "vector_retrieval": {
+        "taste_vector_id": "vec_d_pak_015"
+      },
+      "simulation_state": {
+        "inventory_in_stock": true
+      },
+      "ingredients": [
+        "cheese",
+        "maida",
+        "chicken"
+      ]
     }
   ]
 }
