@@ -1,0 +1,17 @@
+# 1. Python Environment (Updated for Nested Folders)
+venv/
+**/venv/
+**/env/
+**/__pycache__/
+*.pyc
+
+# 2. Local Vector Data (Hamza will have his own)
+chroma_storage/
+chroma_data/
+
+# 3. OS specific files
+.DS_Store
+Thumbs.db
+
+# 4. Sensitive info
+.env
