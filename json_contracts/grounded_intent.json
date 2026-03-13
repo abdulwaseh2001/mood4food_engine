@@ -1,5 +1,17 @@
 {
+  "intent_metadata": {
+    "intent_id": "streamlit_demo_req",
+    "timestamp": "2026-03-12T19:30:00Z"
+  },
   "hard_constraints": {
-    "allergens_pruned": []
+    "max_calories": 800,
+    "allergens_pruned": [
+      "meat"
+    ]
+  },
+  "location_constraint": {
+    "user_lat": 33.6844,
+    "user_lon": 73.0479,
+    "max_radius_km": 5.0
   }
 }

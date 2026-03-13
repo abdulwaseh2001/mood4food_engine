@@ -18,7 +18,7 @@ except ImportError as e:
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 INTENT_PATH = os.path.join(BASE_DIR, "../json_contracts/grounded_intent.json")
 EVAL_PATH = os.path.join(BASE_DIR, "../json_contracts/candidate_evaluation.json")
-CHROMA_DIR = os.path.join(BASE_DIR, "../tier_2_vector_layer/chroma_storage/")
+CHROMA_DIR = os.path.join(BASE_DIR, "../tier_2_optimization/chroma_storage/")
 
 # Scripts and Schema to execute
 SYMBOLIC_SCRIPT = os.path.join(BASE_DIR, "symbolic_anchoring.py")

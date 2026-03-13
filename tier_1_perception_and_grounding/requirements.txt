@@ -1,3 +1,4 @@
 neo4j
 chromadb
-sentence-transformers
+sentence-transformers 
+streamlit

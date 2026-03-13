@@ -38,7 +38,7 @@ def audit_vector_geometry():
     """Geometric assertion of the embedding space."""
     persist_dir = os.path.abspath(os.path.join(
         os.path.dirname(__file__), 
-        "../tier_2_vector_layer/chroma_storage/"
+        "../tier_2_optimization/chroma_storage/"
     ))
     
     client = chromadb.PersistentClient(path=persist_dir)

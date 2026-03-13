@@ -12,7 +12,7 @@ class VectorArchitect:
         # 1. Initialize persistent ChromaDB client
         persist_dir = os.path.abspath(os.path.join(
             os.path.dirname(__file__), 
-            "../tier_2_vector_layer/chroma_storage/"
+            "../tier_2_optimization/chroma_storage/"
         ))
         os.makedirs(persist_dir, exist_ok=True)
         
@@ -33,8 +33,20 @@ class VectorArchitect:
         """
         Loads safe candidates from the JSON Contract and maps them into 
         the mathematical coordinate space.
+        Enforces absolute state synchronization by resetting the collection.
         """
-        # 3. Open absolute source of truth
+        # 1. Physically reset the collection to eliminate "ghost vectors"
+        try:
+            self.client.delete_collection(name="candidate_dishes")
+        except Exception:
+            pass  # Handle case where collection doesn't exist yet
+        
+        self.collection = self.client.create_collection(
+            name="candidate_dishes",
+            embedding_function=self.embedding_fn
+        )
+
+        # 2. Open absolute source of truth
         safe_candidates_path = os.path.abspath(os.path.join(
             os.path.dirname(__file__), 
             "../json_contracts/candidate_evaluation.json"
@@ -61,10 +73,10 @@ class VectorArchitect:
             name = candidate["dish_metadata"]["name"]
             ingredients = candidate.get("ingredients", [])
             
-            # 4. Concatenate semantic attributes for embedding
+            # 3. Concatenate semantic attributes for embedding
             semantic_string = f"{name}: {', '.join(ingredients)}"
             
-            # 5 & 6. Prepare for ChromaDB Upsert
+            # 4. Prepare for ChromaDB Upsert
             ids.append(dish_id)
             documents.append(semantic_string)
             # Embed the full JSON dictionary in metadata for downstream agent fidelity
@@ -77,7 +89,7 @@ class VectorArchitect:
             metadatas=metadatas
         )
 
-        print(f"Vector Space Updated: {len(ids)} candidates embedded into 'candidate_dishes'.")
+        print(f"Vector Space Reset & Synchronized: {len(ids)} candidates embedded into 'candidate_dishes'.")
 
 if __name__ == "__main__":
     # Tier 1 Vectorization Hook
